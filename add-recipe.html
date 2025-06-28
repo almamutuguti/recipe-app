@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+
+    header {
+        text-align: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("/images/food.jpg");
+        background-size: contain;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        padding: 20px;
+        left: 0;
+        color: white;
+
+    }
+
+    header h1 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 150px 3%;
+
+    }
+
+    .left-column {
+        width: 50%;
+    }
+
+    .right-column {
+        width: 50%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: 550;
+    }
+
+
+    input[type="text"],
+    textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 50%;
+        box-sizing: border-box;
+
+    }
+
+    button[type="submit"] {
+        padding: 5px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ccc;
+        color: #333;
+        transition: 0.5s ease-in-out;
+    }
+
+    #recipe-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    #no-recipes {
+        display: flex;
+        background-color: #FFCCCC;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 44px;
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #ccc;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #fileUpload {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header id="head">
+        <h1 class="text-5xl">Recipe App</h1>
+        <!-- <nav id="nav-links">
+            <ul>
+                <li>Home</li>
+                <li>Add recipe</li>
+                <li>Edit recipe</li>
+            </ul>
+        </nav> -->
+    </header>
+    <main>
+        <div id="container">
+            <div class="left-column">
+                <h3 class="text-xl font-bold border-b-4 border-black">Add Recipe</h3>
+
+                <form class="pt-5">
+                    <label for="recipe-name">Name:</label>
+                    <input type="text" id="recipe-name" required>
+                    <br>
+
+                    <label for="recipe-ingredients">Ingredients:</label>
+                    <textarea id="recipe-ingredients" rows="5" required></textarea>
+                    <br>
+
+                    <label for="recipe-method">Method:</label>
+                    <textarea id="recipe-method" rows="5" required></textarea>
+                    <br>
+
+                    <button type="submit">Add Recipe</button>
+
+                </form>
+            </div>
+            <div id="image" class="right-column">
+                <div class="container2">
+                    <input type="file" id="fileUpload" accept="image/*">
+                </div>
+                <div class="image-container">
+                    <img id="output" src="" alt="">
+                </div>
+            </div>
+
+            <!-- adding recipe space -->
+            <!-- <div class="right-column">
+                <div id="recipe-list"></div>
+                <div id="no-recipes">You have no recipes.</div>
+            </div> -->
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
