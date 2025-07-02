@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <header>
+        <nav class="frosted-navbar">
+            <div class="nav-inner">
+                <h2 class="site-brand">My Recipe Book</h2>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-recipe.html">Add</a></li>
+                    <li><a href="edit-recipe.html">Edit</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <h1>Add New Recipe</h1>
     <form class="add-recipe-form">
 
         <input type="text" id="title" placeholder="Title" required>
         <input type="text" id="image" placeholder="image URL" required>
-        <textarea  id="description" placeholder="Short description" required></textarea>
+        <textarea id="description" placeholder="Short description" required></textarea>
         <input type="text" id="servings" placeholder="Servings" required>
-        <input type="text"  id="prepTime" placeholder="Preparation Time" required>
-        <input type="text"  id="cookTime" placeholder="Cook Time" required>
+        <input type="text" id="prepTime" placeholder="Preparation Time" required>
+        <input type="text" id="cookTime" placeholder="Cook Time" required>
         <textarea id="ingredients" placeholder="Ingredients" required></textarea>
-        <textarea  id="instructions" placeholder="instructions"></textarea>
+        <textarea id="instructions" placeholder="instructions"></textarea>
         <button type="submit">Save Recipe</button>
 
         <p id="success-message" style="display: none; color: green;">Recipe added successfully</p>
@@ -26,4 +42,5 @@
     <script src="storage.js"></script>
     <script src="add.js"></script>
 </body>
+
 </html>

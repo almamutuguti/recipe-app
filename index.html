@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
+
+
+
 <body>
-   <h1>MY RECIPE APP</h1> 
-    <div id="recipe-list" class="grid"></div>
+    <div>
+        <nav class="frosted-navbar">
+            <div class="nav-inner">
+                <h2 class="site-brand">My Recipe Book</h2>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-recipe.html">Add</a></li>
+                    <li><a href="edit-recipe.html">Edit</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="recipe-list" class="grid"></div>
+    </div>
 
     <script src="storage.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

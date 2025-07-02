@@ -42,5 +42,30 @@
       "Pour the dressing over the salad and toss to combine.",
       "Serve immediately."
     ]
+  },
+
+  {
+  "id": 1719508800002,
+  "title": "Creamy Garlic Pasta",
+  "image": "https://placehold.co/600x400/ffeaa7/333333?text=Garlic+Pasta",
+  "description": "A rich, garlicky pasta tossed in a creamy sauce with herbs.",
+  "servings": "3",
+  "prepTime": "10 minutes",
+  "cookTime": "15 minutes",
+  "ingredients": [
+    "200g fettuccine",
+    "2 tbsp butter",
+    "3 cloves garlic, minced",
+    "1 cup heavy cream",
+    "1/2 cup grated parmesan",
+    "Salt and pepper to taste"
+  ],
+  "instructions": [
+    "Cook pasta until al dente; drain and set aside.",
+    "In a pan, melt butter and sauté garlic until fragrant.",
+    "Stir in cream, bring to a simmer.",
+    "Add parmesan, season, and combine with pasta."
+  ]
   }
+
 ]

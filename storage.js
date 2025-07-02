@@ -12,7 +12,7 @@ async function getRecipes() {
   } else {
     // 3. If no data is in local storage, fetch it from the JSON file.
     try {
-      const response = await fetch('recipes.json');
+      const response = await fetch('recipe.json');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
